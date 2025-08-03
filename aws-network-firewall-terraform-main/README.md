@@ -47,7 +47,6 @@ If you wish to deploy in any other AWS Region, edit the corresponding setting in
 - try to curl the private IP of the EC2 Instance in `spoke-vpc-b` from the EC2 Instance in `spoke-vpc-a` (or vice-versa): this should work
 - try a ping to a public IP address: this shouldn't work
 - try to `dig` using a public DNS resolver: this shouldn't work
-- try to curl https://facebook.com or https://twitter.com: this shouldn't work
 - try to curl any other public URL: this should work
 - from any browser naviate to http://<public_alb_dns_name> where <public_alb_dns_name> is the DNS name of the ALB created by your Terraform code in the Inspection VPC.
 
